@@ -1,7 +1,149 @@
-body{
-    background-color: black;
+*{margin:0;
+  padding:0;
+  cursor:url("img/puntero.gif"),url("img/puntero.ico"),url("img/puntero.svg"),auto;
 }
+
+body{
+    background-color:black;
+    width:100%;
+    height: auto;
+    overflow: hidden;    
+}
+
+body:fullscreen{
+    width:200%;
+    height: auto;
+    overflow: hidden;
+}
+
+#banner{
+    width: 100%;
+    height:100%;
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+   #contenedorBanner{
+       display: flex;
+       justify-content: center;
+   }
+
+   #banner img{
+       width: 70%;
+    }
+    #luz{
+        position:absolute;
+        top:20.5%;
+        left:15%;
+        width: 70%;
+        animation:luz 1s alternate infinite;
+    }
+
+    @keyframes luz{
+        0%{ opacity:0};
+        49%{opacity:0.5};
+        50%{opacity:10.5;}
+        100%{opacity:1};
+    }
+
+#niveles{
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+    justify-content: center;
+}    
+
+    #niveles img{
+        width:40%;
+    }
+
+    #banner a{
+       font-size: 200%;
+       color:transparent;
+    }
+   
+       #facil{
+        position:absolute;
+        width: 50%;
+        top:8%;
+        left:31%;
+    }
+       
+       #b-facil{
+           background-image: url(img/facil.jpg);
+           background-size: contain;
+           background-repeat: no-repeat;
+           width:16%;
+           height:63px;
+           border-radius:20px 10px 0 20px;
+       }
+
+       #b-facil:hover{
+           box-shadow: rgb(217, 255, 0) 4px 4px 20px;
+       }
+       
+    #maso{
+        position:absolute;
+        width: 50%;
+        top:8%;
+        left:45%;
+    }
+        #b-medio{
+        background-image: url(img/maso.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width:16%;
+        height:63px;
+        border-radius:20px 10px 0 20px;
+        }
+        #b-medio:hover{
+            box-shadow: rgb(217, 255, 0) 4px 4px 20px;
+        }
+
+    #crack{
+        position:absolute;
+        width: 50%;
+        top:8%;
+        left:58.5%;
+    }
+        #b-dificil{
+        background-image: url(img/crack.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width:16%;
+        height:63px;
+        border-radius:20px 10px 0 20px;
+        }  
+        #b-dificil:hover{
+            box-shadow: rgb(217, 255, 0) 4px 4px 20px;
+        }
 
 #scaryv{
     opacity:0;
+}
+
+@media screen and (max-width:1100px){
+
+   #luz{
+       top:17.8%;
+       left:15%;
+   }
+   
+   #facil{
+      z-index:1000;
+   }
+
+   #maso{
+    z-index:1000;
+   }
+
+   #crack{
+    z-index:1000;
+   }
+
 }

@@ -1,0 +1,86 @@
+@font-face
+{
+   font-family: 'denuevo';
+      src:url("../fonts/fipps-regular-webfont.woff") format("woff"),
+          url("../fonts/fipps-regular-webfont.woff2") format("woff2");
+       }
+@font-face
+{
+    font-family: 'minecraft';
+    src:url("../fonts/minecraft-webfont.woff") format("woff"),
+        url("../fonts/minecraft-webfont.woff2") format("woff2");
+}
+
+*{margin:0;padding:0; cursor:url("../img/puntero.gif"),url("../img/puntero.ico"),url("../img/puntero.svg"),auto;}
+                                                /*CUENTA ATRAS*/
+
+#volver{
+   position:absolute;
+   top:2%;
+   left:1%;
+   width: 7%;
+}
+#volver:hover{
+  margin-top:0.3%;
+}
+
+#contenedorCuentaAtras{
+  background: #81e9ec;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+  #contenedorCuentaAtras p{
+     font-family: 'minecraft';
+     font-size: 7em;
+     color:tomato;
+     text-align: center;
+     margin-top:20%;
+     animation:2s gameover;
+  }
+
+#cuentaRegresiva{
+   width: 250px;
+   height: 250px;
+   border-radius: 100%;
+   overflow: hidden; 
+   margin-top: 15%;
+}
+
+#cuentaRegresiva img{
+    position: relative;
+    right:15%;
+    bottom:5%;
+    animation:countdown 5s alternate-reverse ;
+    
+}
+
+@keyframes countdown{
+    0% {margin-left: 0%}
+    25% {margin-left: 0%}
+
+    25% {margin-top: -100%}
+    50% {margin-top: -100%}
+
+    50% {margin-top: -200%}
+    75% {margin-top: -200%}
+
+    75% {margin-top: -300%}
+    100% {margin-top: -300%}
+}
+
+#tiempo{
+    text-align: center;
+    font-family: 'denuevo';
+    color:rgb(223, 95, 35);
+    font-size:2em;
+    animation:intermitente 0.4s infinite alternate;
+}
+
+@keyframes intermitente{
+    0%{opacity:0};
+    50%{opacity:0};
+    50%{opacity:1};
+    100%{opacity:1};
+}

@@ -1,0 +1,412 @@
+@font-face
+{
+   font-family: 'denuevo';
+      src:url("../../fonts/fipps-regular-webfont.woff") format("woff"),
+          url("../../fonts/fipps-regular-webfont.woff2") format("woff2");
+       }
+@font-face
+{
+    font-family: 'minecraft';
+    src:url("../../fonts/minecraft-webfont.woff") format("woff"),
+        url("../../fonts/minecraft-webfont.woff2") format("woff2");
+}
+@font-face
+{
+    font-family: 'pixelada';
+    src:url("../../fonts/04b_30__-webfont.woff") format("woff"),
+        url("../../fonts/04b_30__-webfont.woff2") format("woff2");
+}
+
+*{margin:0;padding:0;text-decoration: none;cursor:url("../../img/puntero.gif"),url("../../img/puntero.ico"),url("../../img/puntero.svg"),auto;
+    margin:0;}
+
+body{
+    overflow:hidden;
+    background: black;
+}
+
+#ganaste{
+    position:absolute;
+    top:2%;
+    width: 100%;
+    height: auto;
+    z-index: 1000;
+}
+
+#ganaste h1{
+    text-align: center;
+    font-family:'pixelada';
+    color:chartreuse;
+    font-size: 4em;
+}
+
+#ganaste h2{
+    color:silver;
+    font-family:'minecraft';
+    font-size:2em;
+    text-align: center;
+}
+
+#caja{
+    display:flex;
+    justify-content: center;
+}
+
+#c2{
+    position:absolute;
+    bottom:3%;
+    width: 40%;
+    animation:c2 1s infinite ;
+}
+
+@keyframes c2{
+    0% {opacity:1};
+    25% {opacity:1};
+
+    25% {opacity:1};
+    50% {opacity:1};
+
+    50% {opacity:0};
+    75% {opacity:0};
+
+    75% {opacity:0};
+    100% {opacity:0};
+}   
+
+#c3{
+    position: absolute;
+    bottom:3%;
+    width: 40%;
+    animation:c3 1s infinite;
+}
+@keyframes c3{
+    0% {opacity:0};
+    25% {opacity:0};
+
+    25% {opacity:0};
+    50% {opacity:0};
+
+    50% {opacity:1};
+    75% {opacity:1};
+
+    75% {opacity:1};
+    100% {opacity:1};
+}   
+
+                                   /*ANIMACION DE LA CAJA ABIERTA*/
+
+#co1{
+    position:absolute;
+    bottom:3%;
+    width: 40%;
+    animation:co1 2s;
+}
+
+@keyframes co1{
+    0% {opacity:1};
+    20% {opacity:1};
+
+    20% {opacity:0};
+    40% {opacity:0};
+
+    40% {opacity:0};
+    60% {opacity:0};
+
+    60% {opacity:0};
+    80% {opacity:0};
+
+    80% {opacity:0};
+    100% {opacity:0};
+}  
+
+
+#co2{
+    position:absolute;
+    bottom:3%;
+    width: 40%;
+    animation:co2 2s;
+}
+@keyframes co2{
+    0% {opacity:0};
+    20% {opacity:0};
+
+    20% {opacity:1};
+    40% {opacity:1};
+
+    40% {opacity:0};
+    60% {opacity:0};
+
+    60% {opacity:0};
+    80% {opacity:0};
+
+    80% {opacity:0};
+    100% {opacity:0};
+}
+
+#co3{
+    position:absolute;
+    bottom:3%;
+    width: 40%;
+    animation:co3 2s;
+}
+@keyframes co3{
+    0% {opacity:0};
+    20% {opacity:0};
+
+    20% {opacity:0};
+    40% {opacity:0};
+
+    40% {opacity:1};
+    60% {opacity:1};
+
+    60% {opacity:0};
+    80% {opacity:0};
+
+    80% {opacity:0};
+    100% {opacity:0};
+}
+
+#co4{
+    position:absolute;
+    bottom:3%;
+    width: 40%;
+    animation:co4 2s;
+}
+@keyframes co4{
+    0% {opacity:0};
+    20% {opacity:0};
+
+    20% {opacity:0};
+    40% {opacity:0};
+
+    40% {opacity:0};
+    60% {opacity:0};
+
+    60% {opacity:1};
+    80% {opacity:1};
+
+    80% {opacity:0};
+    100% {opacity:0};
+}
+
+#co5{
+    position:absolute;
+    bottom:3%;
+    width: 40%;
+    z-index: 900;
+    animation:co5 2s;
+}
+@keyframes co5{
+    0% {opacity:0};
+    20% {opacity:0};
+
+    20% {opacity:0};
+    40% {opacity:0};
+
+    40% {opacity:0};
+    60% {opacity:0};
+
+    60% {opacity:0};
+    80% {opacity:0};
+
+    80% {opacity:1};
+    100% {opacity:1};
+}
+
+@keyframes luz{
+    0%{ opacity:0};
+    50%{opacity:0};
+    50%{opacity:1}
+    100%{opacity:1};
+}
+
+                                           /*PREMIO*/
+
+#premio{
+    width:100%;
+    z-index: 950;
+    display: flex;
+    justify-content: center;
+}
+
+#premio1{
+    z-index: 950;
+    width: 28%;
+    margin-top:5%;
+    margin-right: 0.7%;
+  }
+
+  #mensaje{
+      position:absolute;
+      z-index: 1000;
+      width:100%;
+      height: 100px;
+  }
+
+  #denuevo{
+    padding-top:2%;
+    font-family:'minecraft';
+    font-size:50px;
+    color:red;  
+    text-shadow: grey 3px 3px 3px;
+}
+
+    #denuevo:hover{
+        color:greenyellow;
+    }
+
+                                              /*BAILE*/
+
+#premio72{
+    position:absolute;
+    z-index: 950;
+    width: 28%;
+    margin-top:5%;
+    margin-right: 0.7%;
+    animation:conEma2 0.5s alternate infinite;
+}
+
+#premio7{
+    position:absolute;
+    z-index: 950;
+    width: 28%;
+    margin-top:5%;
+    margin-right: 0.7%; 
+    opacity:0;
+    animation:conEma 0.5s alternate infinite;
+}     
+
+@keyframes conEma{
+    0%{opacity:1};
+    50%{opacity:0};
+}
+
+
+@keyframes conEma2{
+    0%{opacity:0};
+    50%{opacity:1};
+}
+
+ #gafas1{
+     position:absolute;
+     z-index: 1000;
+     width: 8%;
+     left:50%;
+     top:23%;
+     animation:gafas 2s alternate 1;
+     animation-iteration-count: 1;
+ }  
+ 
+ #gafas2{
+    position:absolute;
+    z-index: 1000;
+    width:8%;
+    left:40%;
+    top:25%;
+    animation:gafas 2s alternate 1;
+    animation-iteration-count: 1;
+}    
+@keyframes gafas{
+    0%{opacity:0};
+    75%{opacity:1};
+}
+
+@keyframes g2{
+    0%{opacity:1};
+    75%{opacity:0};
+}
+
+
+
+  #baile3{
+    position:absolute;
+    z-index: 950;
+    width: 28%;
+    right:35.6%;
+    margin-top:5%;
+    margin-right: 0.7%;
+    animation:dance1 0.8s alternate infinite;
+  }  
+
+  #baile4{
+    position:absolute;
+    z-index: 950;
+    width: 28%;
+    right:35.6%;
+    margin-top:5%;
+    margin-right: 0.7%;
+    animation:dance2 0.8s alternate infinite;
+  }
+
+
+
+  @keyframes dance1{
+      0%{opacity:1};
+      50%{opacity: 1};
+      50%{opacity: 0};
+      100%{opacity: 0};
+  }
+
+  
+  @keyframes dance2{
+    0%{opacity:0};
+    50%{opacity:0};
+    50%{opacity:1};
+    100%{opacity:1};
+}
+
+
+#cool1{
+    position:absolute;
+    z-index: 950;
+    width: 28%;
+    margin-top:5%;
+    margin-right: 0.7%;
+    animation:dance1 1s alternate infinite;
+}
+
+#cool2{
+    position:absolute;
+    z-index: 950;
+    width: 28%;
+    margin-top:5%;
+    margin-right: 0.7%;  
+    animation:dance2 1s alternate infinite;  
+}
+
+
+@media screen and (max-width:1100px){
+   #premio1{
+     margin-top:16.5%;
+   }
+
+   #gafas1{
+     top:37%;
+   }
+
+   #gafas2{
+     top:39%;
+   }
+
+   #baile3{
+      margin-top:16.7%;
+      margin-left: 1.7%;
+   }
+
+   #baile4{
+     margin-top:16.7%;
+     margin-left: 1.7%;
+   }
+
+   #cool1{
+    margin-top: 17%;
+   }
+
+   #cool2{
+       margin-top:17%;
+   }
+
+}
+
+
+

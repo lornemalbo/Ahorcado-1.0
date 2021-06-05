@@ -1,0 +1,14 @@
+*barra de tiempo acorde a la dificultad (medio y dificil, arreglar)
+
+*focus del input, evitar tener que clickear cada vez
+
+*enter del input, evitar desplazar el mouse hasta OK
+
+*sumar algunos segundos luego de responder correctamente
+
+*si el input esta vacio, que no se grabe lo ingresado
+
+*evitar cuentas repetidas
+
+*al perder por errores, la barra no se detiene. y vuelve al estado "game over",
+cada vez que transcurre el lapso de tiempo del setInterval

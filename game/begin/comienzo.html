@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="comienzo.css">
+    <script src="comienzo.js"></script>
+    <link rel="icon" href="../../ahorcadoFavicon.png" type="image/png">
+    <title>Document</title>
+</head>
+<body id="body">
+  <audio id="musica" src="../../audio/suspenso.mp3" bucle ></audio>
+  <audio id="gameOver" src="../../audio/gameOver.mp3"></audio>
+  <audio id="nsp" src="../../audio/nsp.wav"></audio>
+    <main>
+      <section class="game">
+        <section class="operacion" id="operacion">
+            <div id="enunciado">
+               <div id="numerador"></div>
+               <div id="por"><p>x</p></div>
+               <div id="denominador"></div>
+            </div>
+                <label><input type="text" id="resultado" placeholder="=" autofocus autocomplete="off" onkeyup="onKeyUp(event)"></label>
+                <label><img id="ok" src="../../img/boton-ok.jpg"></label>
+            </form>
+        </section>
+        <section class="ahorcado">
+         <img src="../../img/cadalzo.jpg" id="cadalzo">
+         <div class="cuerpo">
+           <div id="cabeza"><img src="../../img/v1.jpg" id="cabezaImg"></div>
+             <div id="dead">
+             <img id="ojos" src="../../img/v1-ojos.jpg">
+             <img id="boca" src="../../img/v1-boca.jpg">
+             <a href="../../index.html"><img id="globo" src="../../img/globo.jpg"></a>
+           </div>
+           <div id="remera"><img src="../../img/v1-reme.jpg"></div>
+           <div id="brazoR"><img src="../../img/brazoR.jpg"></div>
+           <div id="brazoL"><img src="../../img/brazoL.jpg"></div>
+           <div id="manoR"><img src="../../img/manoR.jpg"></div>
+           <div id="manoL"><img src="../../img/manoL.jpg"></div>
+           <div id="piernaR"><img src="../../img/piernaR.jpg"></div>
+           <div id="piernaL"><img src="../../img/piernaL.jpg"></div>
+           <div id="pieR"><img src="../../img/pieR.jpg"></div>
+           <div id="pieL"><img src="../../img/pieL.jpg"></div>    
+         </div>
+        </section>
+      </section>
+      <section class="control">
+        <div id="lifeCont">
+            <div id="dificultades"><img id="dif1" src="../../img/DIF-1.png"><img id="dif2" src="../../img/DIF-2.png"><img id="dif3" src="../../img/DIF-3.png"></div>
+            <div id="life"></div>
+        </div>
+        <div id="vidas">
+            
+        </div>  
+        <div id="opciones">
+            <a href="../../index.html"><img id="volver" src="../../img/boton-volver.jpg"></a>
+        </div>    
+    </section>
+    </main>
+    
+</body>
+</html>
